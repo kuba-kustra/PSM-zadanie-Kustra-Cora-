@@ -108,16 +108,19 @@
       </div>
       <br>
 
-      Kierunek studiów<br>
-      <select name='studia'>
-          <option value="1">Kierunek Administracja</option>
-          <option value="2">Applied Informatics</option>
-          <option value="3">Kierunek Ekonomia</option>
-          <option value="4">Kierunek Analityka Gospodarcza</option>
-          <option value="5">Kierunek Europeistyka</option>
-          <option value="6">Kierunek Finanse i Rachunkowość</option>
-      </select><br>
-
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+          Kierunki studiów
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Kierunek Administracja</a></li>
+          <li><a class="dropdown-item" href="#">Applied Informatics</a></li>
+          <li><a class="dropdown-item" href="#">Kierunek Ekonomia</a></li>
+          <li><a class="dropdown-item" href="#">Kierunek Finanse i Rachunkowość</a></li>
+          <li><a class="dropdown-item" href="#">Kierunek Analityka Gospodarcza</a></li>
+          <li><a class="dropdown-item" href="#">Kierunek Europeistyka</a></li>
+        </ul>
+      </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Uwagi</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
