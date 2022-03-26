@@ -80,24 +80,32 @@
       <h2>Rejestracja na studia</h2>
       <br>
         
-      Imię
-      <input type='text' name='Imię'size='5'>
-        
-        
-      Nazwisko
-      <input type='text' name='Nazwisko' size='5'>
-        
-      
-
-      E-mail
-      <input type='text' name='email'>
+      <div class="mb-3 mt-3">
+        <label for="Imię" class="form-label">Imię:</label>
+        <input type="Imię" class="form-control" id="email" placeholder="Wpisz nazwisko" name="email">
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Nazwisko:</label>
+        <input type="Nazwisko" class="form-control" id="pwd" placeholder="Wpisz nazwisko" name="pswd">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Wpisz email" name="email">
+      </div>
 
         
 
       Rodzaj studiów
-      <input type="radio" name="r1" value="v1" id="radio1"><label for="radio1">Stacjonarne</label>
-      <input type="radio" name="r1" value="v2" id="radio2"><label for="radio2">Niestacjonarne</label><br>
-
+      <div class="form-check mb-3">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="Stacjonarne"> Stacjonarne
+        </label>
+      </div>
+      <div class="form-check mb-3">
+        <label class='form-check-label'>
+          <input class='form-check-input' type='checkbox' name='Niestacjonarne'> Niestacjonarne
+        </label>
+      </div>
       <br>
 
       Kierunek studiów<br>
@@ -109,15 +117,16 @@
           <option value="5">Kierunek Europeistyka</option>
           <option value="6">Kierunek Finanse i Rachunkowość</option>
       </select><br>
+      Uwagi:<br>
+      <textarea name = "uwagi" rows='6' cols="50">
+        W tym miejscu możesz napisać wszelkie uwagi.
+      </textarea><br>
+      <button type="submit" class="btn btn-primary">Zarejestruj</button>
+      <button type="reset" class="btn btn-primary">Anuluj</button>
     </form> 
     <br>
 
-    Uwagi:<br>
-    <textarea name = "uwagi" rows='6' cols="50">
-        W tym miejscu możesz napisać wszelkie uwagi.
-    </textarea><br>
-    <input type='submit' value='Zarejestruj'> 
-    <input type='reset' value='Anuluj'>
+    
 
 
 
